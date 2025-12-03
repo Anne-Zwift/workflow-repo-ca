@@ -1,1 +1,26 @@
+# Environment Variables
+.env
+*.local
+
+# Dependencies
 node_modules/
+dist
+dist-ssr
+
+# Playwright Test Output
+/test-results/
+/playwright-report
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Logs and Debug
+logs
+*.log
+*.debug.log*
+
+# Editor files
+.vscode/
+!.vscode/extensions.json
+.idea
+*.sw?
