@@ -1,13 +1,13 @@
-# Environment Variables
+# Environment Variables/Secrets
 .env
 *.local
 
-# Dependencies
+# Dependencies/Builds
 node_modules/
 dist
 dist-ssr
 
-# Playwright Test Output
+# Testing Output/Playwright Test Output
 /test-results/
 /playwright-report
 /blob-report/
@@ -18,6 +18,9 @@ dist-ssr
 logs
 *.log
 *.debug.log*
+
+# Tooling Cache/ESLint Cache
+.eslintcache
 
 # Editor files
 .vscode/
