@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "start": "vite",
     "prepare": "husky install",
     "test:unit": "vitest --globals --run",
     "test:e2e": "playwright test",
