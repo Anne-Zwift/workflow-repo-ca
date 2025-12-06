@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
     "prepare": "husky install",
-    "test:unit": "vitest --globals",
+    "test:unit": "vitest --globals --run",
     "test:e2e": "playwright test",
     "test": "npm run test:unit && npm run test:e2e"
   },
