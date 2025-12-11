@@ -20,6 +20,7 @@ export default defineConfig([
       sourceType: 'module',
     },
     rules: {
+      ...js.configs.recommended.rules,
       'no-console': 'warn',
       'no-unused-vars': 'error',
       eqeqeq: ['error', 'always'],
