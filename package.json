@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
-    "start": "vite",
+    "start": "live-server --port=5500 --ignore=node_modules",
     "prepare": "husky install",
     "test:unit": "vitest --globals --run",
     "test:e2e": "playwright test",
@@ -23,6 +23,7 @@
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "jsdom": "^27.2.0",
+    "live-server": "^1.2.2",
     "prettier": "^3.7.3",
     "tailwindcss": "^3.4.12",
     "vitest": "^4.0.15"
