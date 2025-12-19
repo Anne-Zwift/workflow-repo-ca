@@ -130,4 +130,4 @@ TEST_USER_PASSWORD=
 
 ## 💭 Feedback and Contributing
 
-#### 🎓 This project for educational purpose only.
+#### 🎓 This project is for educational purpose only.
