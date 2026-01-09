@@ -4,12 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "start": "live-server --port=5500 --ignore=node_modules",
+    "prepare": "husky install",
+    "test:unit": "vitest --globals --run",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:e2e"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.12"
+    "@eslint/js": "^9.39.1",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "jsdom": "^27.2.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.7.3",
+    "tailwindcss": "^3.4.12",
+    "vitest": "^4.0.15"
+  },
+  "lint-staged": {
+    "*.{js,css,html,md}": "prettier --write",
+    "*.js": "eslint --cache --fix"
   }
 }

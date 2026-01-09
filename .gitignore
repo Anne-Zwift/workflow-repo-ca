@@ -1,1 +1,29 @@
+# Environment Variables/Secrets
+.env
+*.local
+
+# Dependencies/Builds
 node_modules/
+dist
+dist-ssr
+
+# Testing Output/Playwright Test Output
+/test-results/
+/playwright-report
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Logs and Debug
+logs
+*.log
+*.debug.log*
+
+# Tooling Cache/ESLint Cache
+.eslintcache
+
+# Editor files
+.vscode/
+!.vscode/extensions.json
+.idea
+*.sw?
